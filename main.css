@@ -1,6 +1,84 @@
+@font-face {
+    font-family: 'Forte';
+    src: url('./assets/fonts/forte.ttf');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('./assets/fonts/proxima-nova_regular.ttf');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
 .top {
     height: 790px;
-    background-color: #3540c0;
+    background-image: url(./assets/images/venice.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header {
+    height: 65px;
+    display: flex;
+
+}
+
+.logo-container {
+    width: 640px;    
+    background-color: rgba(00,00,00,0.2);
+}
+
+.logo {
+    width: 125px;
+    height: 100%;
+    margin-left: 160px;
+    font-family: Forte;
+    color: #ffffff;
+    font-size: 19px;
+    letter-spacing: 0.1em;
+    line-height: 65px;
+}
+
+
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: calc(100% - 640px);
+}
+
+.menu-container {
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.2;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu-item {
+    color: #ffffff;
+    font-family: ProximaNova;
+    font-size: 13px;
+    margin-top: 25px;
+    line-height: 65px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+.menu-container:hover {
+    background-color: rgba(00,00,00,0.2);
+    opacity: 1;
+}
+
+.content {
+    
 }
 
 .footer {
