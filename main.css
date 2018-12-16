@@ -14,11 +14,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('./assets/fonts/proxima-nova_bold.otf');
+    
+    font-weight: bold;
+    font-style: bold;
+}
+
+body {
+    min-width: 1400px;
+}
+
 .top {
     height: 790px;
     background-image: url(./assets/images/venice.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .header {
@@ -60,6 +72,14 @@
     text-align: center;
 }
 
+.menu-container__opened {
+    height: 100%;
+    background-color: rgba(00,00,00,0.2);
+    opacity: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
 .menu-item {
     color: #ffffff;
     font-family: ProximaNova;
@@ -77,8 +97,155 @@
     opacity: 1;
 }
 
-.content {
+.main-text {
+    height: 280px;
+    font-family: ProximaNova;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-container {
+    width: 372px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.search-form {
+    width: 413px;
     
+}
+
+.search-field {
+    width: 333px;
+    height: 37px;
+    border-radius: 42px;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    padding-left: 20px;
+    font-family: ProximaNova;
+    font-size: 12px;
+}
+
+.search-button {
+    border-radius: 42px;
+    width: 76px;
+    height: 45px;
+    position: absolute;
+    left: 269px;
+    background-color: #f46f8d;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: ProximaNova;
+    border: none;
+    top: -4px;
+}
+
+.content {
+    height: 2000px;
+}
+
+.destination-container {
+    height: 1355px;
+    background-color: #fdf8f9;
+    margin-left: 160px;
+    margin-right: 160px;
+    position: relative;
+}
+
+.destination-title {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: ProximaNova;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #626161;
+    font-weight: bold;
+}
+
+.params-container {
+    height: 50px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination-form {
+    height: 100%;
+    background-color: #ffffff;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    width: 270px;
+    position: relative;
+}
+
+.destination-param {
+    height: 100%;
+    background-color: #ffffff;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    width: 145px;
+    position: relative;
+
+}
+
+.destination-style {
+    font-family: ProximaNova;
+    font-size: 15px;
+    margin-left: 18px;
+}
+
+.icon-style {
+    position: absolute;
+    right: 10px;
+}
+
+.destination-button {
+    width: 200px;
+    background-color: #f76f8d;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: ProximaNova;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.places {
+    margin-top: 75px;
+}
+
+.places-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.only-button {
+    height: 50px;
+    width: 250px;
+    border-radius: 45px;
+    position: absolute;
+    bottom: -25px;
+    left: 40%;
+}
+
+.place-title {
+    margin-top: 140px;
+    font-family: ProximaNova;
+    font-size: 30px;
+    text-align: center;
 }
 
 .footer {
